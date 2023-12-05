@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body onload="getDeleted()">
+
+    
+    <div>
+        <nav class="navbar"  style="background-color: #800;">
+            <div class="container-fluid" >
+              <a style="color: white;" class="navbar-brand" href="#"><h1>Tide Fit | Roll Tide</h1>
+                <h6 align="Center"><u>Your Personal Exercise Tracker</u></h6>
+            </a>
+            <img src="./img/Script A2-2.jpg" alt="ROLL TIDE" width="50" height="60">
+              <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white;">Deleted Exercises</a>
+                  </li>
+                  <li class="nav-item">
+                   
+                    <a class="nav-link" href="#" style="color: white;">Pinned Exercises</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                     Site Directory
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #800; ">
+                      <li><a class="dropdown-item" href="#" style="color: white;" >Home</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#" style="color: white;">About Tide Fit</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#" style="color: white;">About Developer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+ <!--Top header-->
+    
+<!-- Middle of Screen Jumotron-->
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold"><u class="underline">All Exercises</u></h1>
+      <p class="col-md-8 fs-4">Welcome to TIDE FIT your personal exercise tracker! Here is a list of all the exercise you have done. You may pin, delete, or add a new exercise to your list!</p>
+      <button class="btn btn-outline btn-lg" style="color: #800;" id="newExercise" onclick="handleNewCard()">Add New Exercise</button>
+    </div>
+  </div>
+  
+  
+<!-- Middle of Screen Jumotron-->
+
+
+  <!--Cards-->
+
+<div id="deletedExercises"></div>
+
+
+
+
+
+<!--Cards-->
+
+<!--Bottom Footer-->
+<div>
+      <nav class="navbar fixed-bottom navbar-expand-sm" style="background-color: #800;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"  style="color: white;">Tide Fit</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"  style="color: white;">All Exercises</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  style="color: white;">Pinned Exercises</a>
+              </li>
+              <li class="nav-item dropup">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;">Site Directory</a>
+                <ul class="dropdown-menu" style="background-color: #800; ">
+                  <li><a class="dropdown-item" href="#"  style="color: white;">Home</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"  style="color: white;">About Tide Fit</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"  style="color: white;">About Developer</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <script type="text/javascript" src="./scripts/deletedScreen.js"></script>
+</body>
+</html>

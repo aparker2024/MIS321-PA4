@@ -40,6 +40,7 @@ namespace API.Controllers
         [HttpPost]
         public void Post([FromBody] Exercise value)
         {
+            System.Console.WriteLine(value.activityType);
             ISaveAllData insertObject = new SaveData();
             insertObject.CreateExercise(value);
         }

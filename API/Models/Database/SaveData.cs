@@ -17,6 +17,7 @@ namespace API.Models.Database
             
             using var cmd = new MySqlCommand(stm,con);
             cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         public void CreateExercise(Exercise value) //inserrt data
@@ -35,6 +36,7 @@ namespace API.Models.Database
             cmd.Parameters.AddWithValue("@Deleted", value.Deleted);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
+             con.Close();
         }
 
 
