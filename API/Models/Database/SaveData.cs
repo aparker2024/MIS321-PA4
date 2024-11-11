@@ -5,20 +5,20 @@ namespace API.Models.Database
 {
     public class SaveData : ISaveAllData
     {
-        public static void CreateExerciseTable() //create table for data
-        {
-            ConnectionString myConnection = new ConnectionString();
-            string cs = myConnection.cs;
+        // public static void CreateExerciseTable() //create table for data
+        // {
+        //     ConnectionString myConnection = new ConnectionString();
+        //     string cs = myConnection.cs;
 
-            using var con = new MySqlConnection(cs);
-            con.Open();
+        //     using var con = new MySqlConnection(cs);
+        //     con.Open();
 
-            string stm = @"CREATE TABLE exercises(exerciseID INTEGER PRIMARY KEY AUTO_INCREMENT, activityType TEXT, distanceMiles INTEGER, completionDate TEXT, Pinned BOOL, Deleted TEXT)";
+        //     string stm = @"CREATE TABLE exercises(exerciseID INTEGER PRIMARY KEY AUTO_INCREMENT, activityType TEXT, distanceMiles INTEGER, completionDate TEXT, Pinned BOOL, Deleted TEXT, run TEXT)";
             
-            using var cmd = new MySqlCommand(stm,con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
+        //     using var cmd = new MySqlCommand(stm,con);
+        //     cmd.ExecuteNonQuery();
+        //     con.Close();
+        // }
 
         public void CreateExercise(Exercise value) //inserrt data
         {

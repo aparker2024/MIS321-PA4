@@ -12,8 +12,6 @@ namespace API.Models
         public string completionDate{get;set;}
         public string Pinned{get;set;}
         public string Deleted{get;set;}
-
-
         
         public ISaveAllData SaveData {get;set;}
 
